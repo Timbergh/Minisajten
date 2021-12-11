@@ -11,7 +11,6 @@
       src="https://kit.fontawesome.com/4b39a549d2.js "
       crossorigin="anonymous"
     ></script>
-
   </head>
   <body>
     <header>
@@ -24,7 +23,8 @@
     </header>
       <section class="centerer">
         <nav class="item-nav">
-          <ul class="item-list">
+          <ul id="item-list">
+            <button id="scroll-left" class="scroll-button"><i class="fas fa-chevron-left"></i></button>
             <li class="item-style"><i class="fas fa-hamburger fa"></i>Borgir</li>
             <li class="item-style"><i class="fas fa-hat-wizard fa"></i>Dripcap</li>
             <li class="item-style"><i class="fas fa-pills fa"></i>Roids</li>
@@ -43,6 +43,7 @@
             <li class="item-style"><i class="fas fa-compact-disc fa"></i>CD-Disk</li>
             <li class="item-style"><i class="fas fa-slash fa"></i>Pointy Spike</li>
             <li class="item-style"><i class="fas fa-icicles fa rotate"></i>Stalactite</li>
+            <button id="scroll-right" class="scroll-button"><i class="fas fa-chevron-right"></i></button>
           </ul>
         </nav>
       </section>
@@ -57,5 +58,6 @@
           </div>
         </div>
       </form>
+      <script src="scroll.js"></script>
   </body>
 </html>
