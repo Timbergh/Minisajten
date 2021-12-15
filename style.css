@@ -153,14 +153,14 @@ body {
   justify-content: center;
   border: gray 3px solid;
   width: 60vw;
-  height: 70vh;
+  height: 90vh;
   margin-top: 5%;
   margin-bottom: 5%;
   background-color: white;
   min-height: 300px;
 }
 
-#comment-section {
+#comment-area {
   margin-top: 3%;
   resize: none;
   height: 10vh;
@@ -176,7 +176,7 @@ body {
 h2 {
   text-align: center;
   margin-top: 3%;
-  font-family: "Roboto";
+  font-family: "Varela Round", sans-serif;
 }
 
 .comment-button {
@@ -200,4 +200,67 @@ h2 {
 .button-end {
   display: flex;
   justify-content: end;
+}
+
+.comment-section {
+  border: gray 3px solid;
+  margin-top: 1%;
+  margin-left: 7%;
+  width: 51vw;
+  height: 50%;
+}
+
+.fake-comment {
+  margin-top: 5%;
+  margin-left: 5%;
+  list-style: none;
+}
+
+.comment-style {
+  padding-bottom: 1.5%;
+}
+
+.comment-style:hover {
+  background-color: rgba(3, 3, 3, 0.027);
+}
+
+
+#user1::before {
+  content: "Ian: ";
+  font-family: "Varela Round", sans-serif;
+}
+
+#user2::before {
+  content: "Benjamin: ";
+  font-family: "Varela Round", sans-serif;
+}
+
+.thumb-button {
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+.thumb-button:hover {
+  transform: scale(1.1);
+}
+
+.thumb-button:active {
+  color: #030303b7;
+  transform: scale(1.2);
+}
+
+#user2 .thumb-button-down::after {
+  content: "12";
+}
+
+#user2 .thumb-button-up::after {
+  content: "0";
+}
+
+#user1 .thumb-button-down::after {
+  content: "1";
+}
+
+#user1 .thumb-button-up::after {
+  content: "31";
 }

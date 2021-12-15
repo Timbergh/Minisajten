@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minisajt</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="logo1.png">
+    <link rel="icon" type="image/x-icon" href="logo1.png" />
     <script
       src="https://kit.fontawesome.com/4b39a549d2.js "
       crossorigin="anonymous"
@@ -16,48 +16,82 @@
     <header>
       <section>
         <div class="banner">
-            <img src="logo1.png" id="logo">
+          <img src="logo1.png" id="logo" />
           <h1 class="game-name">ADVENTURE GAME</h1>
         </div>
       </section>
     </header>
-      <section class="centerer">
-        <nav class="item-nav">
-          <ul id="item-list">
-            <button id="scroll-left" class="scroll-button"><i class="fas fa-chevron-left"></i></button>
-            <li class="item-style"><i class="fas fa-hamburger fa"></i>Borgir</li>
-            <li class="item-style"><i class="fas fa-hat-wizard fa"></i>Dripcap</li>
-            <li class="item-style"><i class="fas fa-pills fa"></i>Roids</li>
-            <li class="item-style"><i class="fas fa-flask fa"></i>Red Potion</li>
-            <li class="item-style"><i class="fab fa-pagelines fa"></i></i>Stick</li>
-            <li class="item-style"><i class="fas fa-minus fa"></i>Belt</li>
-            <li class="item-style"><i class="fas fa-shoe-prints fa"></i>Jordans</li>
-            <li class="item-style"><i class="fab fa-black-tie fa"></i>Tie</li>
-            <li class="item-style"><i class="fas fa-hockey-puck fa"></i>Butterstone</li>
-            <li class="item-style"><i class="fas fa-fish fa"></i>Fish</li>
-            <li class="item-style"><i class="fas fa-utensils fa"></i>Knife</li>
-            <li class="item-style"><i class="fas fa-poop fa"></i>Poop</li>
-            <li class="item-style"><i class="fas fa-socks fa"></i>Gucci Flip Fops</li>
-            <li class="item-style"><i class="fas fa-tshirt fa"></i>Theo's Jacket</li>
-            <li class="item-style"><i class="fas fa-crown fa"></i>Frog Crown</li>
-            <li class="item-style"><i class="fas fa-compact-disc fa"></i>CD-Disk</li>
-            <li class="item-style"><i class="fas fa-slash fa"></i>Pointy Spike</li>
-            <li class="item-style"><i class="fas fa-icicles fa rotate"></i>Stalactite</li>
-            <button id="scroll-right" class="scroll-button"><i class="fas fa-chevron-right"></i></button>
-          </ul>
-        </nav>
-      </section>
-      <form class="centerer">
-        <div class="comment">
-          <h2>Comment Section</h2>
-          <div class="centerer">
-            <textarea placeholder="Comment here" id="comment-section"></textarea>
-          </div>
-          <div class="button-end">
-            <input class="comment-button" type="submit" value="Comment">
-          </div>
+    <section class="centerer">
+      <nav class="item-nav">
+        <ul id="item-list">
+          <button id="scroll-left" class="scroll-button">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <li class="item-style"><i class="fas fa-hamburger fa"></i>Borgir</li>
+          <li class="item-style">
+            <i class="fas fa-hat-wizard fa"></i>Dripcap
+          </li>
+          <li class="item-style"><i class="fas fa-pills fa"></i>Roids</li>
+          <li class="item-style"><i class="fas fa-flask fa"></i>Red Potion</li>
+          <li class="item-style"><i class="fab fa-pagelines fa"></i>Stick</li>
+          <li class="item-style"><i class="fas fa-minus fa"></i>Belt</li>
+          <li class="item-style">
+            <i class="fas fa-shoe-prints fa"></i>Jordans
+          </li>
+          <li class="item-style"><i class="fab fa-black-tie fa"></i>Tie</li>
+          <li class="item-style">
+            <i class="fas fa-hockey-puck fa"></i>Butterstone
+          </li>
+          <li class="item-style"><i class="fas fa-fish fa"></i>Fish</li>
+          <li class="item-style"><i class="fas fa-utensils fa"></i>Knife</li>
+          <li class="item-style"><i class="fas fa-poop fa"></i>Poop</li>
+          <li class="item-style">
+            <i class="fas fa-socks fa"></i>Gucci Flip Flops
+          </li>
+          <li class="item-style">
+            <i class="fas fa-tshirt fa"></i>Theo's Jacket
+          </li>
+          <li class="item-style"><i class="fas fa-crown fa"></i>Frog Crown</li>
+          <li class="item-style">
+            <i class="fas fa-compact-disc fa"></i>CD-Disk
+          </li>
+          <li class="item-style">
+            <i class="fas fa-slash fa"></i>Pointy Spike
+          </li>
+          <li class="item-style">
+            <i class="fas fa-icicles fa rotate"></i>Stalactite
+          </li>
+          <button id="scroll-right" class="scroll-button">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </ul>
+      </nav>
+    </section>
+    <form class="centerer">
+      <div class="comment">
+        <h2>Comment Section</h2>
+        <div class="centerer">
+          <textarea placeholder="Comment here" id="comment-area"></textarea>
         </div>
-      </form>
-      <script src="scroll.js"></script>
+        <div class="button-end">
+          <input class="comment-button" type="submit" value="Comment" />
+        </div>
+        <div class="comment-section c">
+          <ul class="fake-comment">
+            <li id="user1" class="comment-style">
+              Best game ever!
+              <i class="far fa-thumbs-up thumb-button thumb-button-up"></i
+              ><i class="far fa-thumbs-down thumb-button thumb-button-down"></i>
+            </li>
+            <li id="user2" class="comment-style">
+              Bad game :/
+              <i class="far fa-thumbs-up thumb-button thumb-button-up"></i
+              ><i class="far fa-thumbs-down thumb-button thumb-button-down"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </form>
+    <script src="scroll.js"></script>
   </body>
 </html>
