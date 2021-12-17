@@ -30,7 +30,6 @@ body {
   border: none;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
-
 }
 
 .logo-div {
@@ -44,18 +43,48 @@ body {
 
 #logo {
   position: absolute;
+  display: flex;
 }
 
 .logo-active {
   animation: move 0.9s 1 linear;
 }
 
+.logo-particle {
+  position: absolute;
+  background-color: #b2a98f;
+  width: 4px;
+  height: 4px;
+  animation: flame 0.15s infinite step-end;
+}
+
+@keyframes flame {
+  0% {
+    opacity: 0.3;
+    margin-top: 87px;
+    margin-left: 100px;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
 @keyframes move {
-  0% {transform:  translateX(0%);}
-  10% {transform: translateX(10%) translateY(-10%) rotate(10deg);}
-  40% {transform: translateX(40%) translateY(-40%) rotate(-20deg);}
-  80% {transform: translateX(80%) translateY(-80%) rotate(10deg);}
-  100% {transform: translateX(100%) translateY(-100%);}
+  0% {
+    transform: translateX(0%);
+  }
+  10% {
+    transform: translateX(10%) translateY(-10%) rotate(10deg);
+  }
+  40% {
+    transform: translateX(40%) translateY(-40%) rotate(-20deg);
+  }
+  80% {
+    transform: translateX(80%) translateY(-80%) rotate(10deg);
+  }
+  100% {
+    transform: translateX(200%) translateY(-200%);
+  }
 }
 
 .game-name {
@@ -261,7 +290,6 @@ h2 {
 .comment-style:hover {
   background-color: rgba(3, 3, 3, 0.027);
 }
-
 
 #user1::before {
   content: "Ian: ";
