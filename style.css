@@ -19,6 +19,45 @@ body {
   min-height: 300px;
 }
 
+.sign-in-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.login {
+  margin-left: 2px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+
+}
+
+.logo-div {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#logo {
+  position: absolute;
+}
+
+.logo-active {
+  animation: move 0.9s 1 linear;
+}
+
+@keyframes move {
+  0% {transform:  translateX(0%);}
+  10% {transform: translateX(10%) translateY(-10%) rotate(10deg);}
+  40% {transform: translateX(40%) translateY(-40%) rotate(-20deg);}
+  80% {transform: translateX(80%) translateY(-80%) rotate(10deg);}
+  100% {transform: translateX(100%) translateY(-100%);}
+}
+
 .game-name {
   color: white;
   font-family: "Varela Round", sans-serif;
@@ -50,7 +89,6 @@ body {
   align-items: center;
   height: 100%;
   width: 90vw;
-  display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
 }

@@ -1,3 +1,5 @@
+/* Skrev inte den här koden själv men har läst på lite om det */
+
 const buttonleft = document.querySelector("#item-list #scroll-left");
 
 buttonleft.addEventListener("click", ()=> {

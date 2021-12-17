@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minisajt</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="logo1.png" />
+    <link rel="icon" type="image/x-icon" href="logo2.png" />
     <script
       src="https://kit.fontawesome.com/4b39a549d2.js "
       crossorigin="anonymous"
@@ -15,8 +15,15 @@
   <body>
     <header>
       <section>
+        <div class="sign-in-button">
+          <button class="login">Sign In</button>
+          <button class="login">Sign Up</button>
+        </div>
         <div class="banner">
-          <img src="logo1.png" id="logo" />
+          <div class="logo-div">
+            <img src="logo1.png" />
+            <img src="logo1animation.png" id="logo" />
+          </div>
           <h1 class="game-name">ADVENTURE GAME</h1>
         </div>
       </section>
@@ -93,5 +100,6 @@
       </div>
     </form>
     <script src="scroll.js"></script>
+    <script src="logoanimation.js"></script>
   </body>
 </html>
