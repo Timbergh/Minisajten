@@ -5,6 +5,124 @@
   padding: 0;
 }
 
+@media screen and (min-width: 992px) {
+  .banner {
+    height: 50vh;
+  }
+
+  .logo-div {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+  }
+
+  #logo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .game-name {
+    font-size: 4.8rem;
+    text-shadow: 4px 4px 0px #b2a98f, 20px 14px 10px rgba(0, 0, 0, 0.15),
+      20px 24px 2px rgba(0, 0, 0, 0.1), 20px 24px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .comment {
+    width: 60vw;
+    height: 90vh;
+  }
+
+  #comment-area {
+    width: 50vw;
+  }
+
+  .comment-section {
+    width: 50vw;
+  }
+
+  .comment-button {
+    margin-right: 8%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner {
+    height: 30vh;
+  }
+
+  .logo-div {
+    width: 100px;
+    height: 100px;
+  }
+
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .game-name {
+    font-size: 2rem;
+    text-shadow: 2px 2px 0px #b2a98f, 15px 9px 10px rgba(0, 0, 0, 0.15),
+      15px 14px 2px rgba(0, 0, 0, 0.1), 15px 14px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .comment {
+    width: 80vw;
+    height: 90vh;
+  }
+
+  #comment-area {
+    width: 68vw;
+  }
+
+  .comment-section {
+    width: 68vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-div {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+  }
+
+  .fa {
+    font-size: 2rem;
+  }
+
+  .comment {
+    width: 100%;
+  }
+
+  #comment-area {
+    width: 80vw;
+  }
+
+  .comment-section {
+    width: 80vw;
+  }
+
+  .comment-button {
+    margin-right: 10%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .fa {
+    font-size: 5rem;
+  }
+
+  .item-nav {
+    width: 80vw;
+    height: 20vh;
+  }
+
+  .comment-button {
+    margin-right: 8%;
+  }
+}
+
 body {
   background-image: url(white-background1.png);
 }
@@ -14,9 +132,7 @@ body {
   justify-content: center;
   align-items: center;
   width: auto;
-  height: 50vh;
   background-color: rgb(48, 79, 109);
-  min-height: 300px;
 }
 
 .sign-in-button {
@@ -27,16 +143,13 @@ body {
 
 .login {
   margin-left: 2px;
-  border: none;
-  border-radius: 10px;
-  background-color: rgb(255, 255, 255);
+  padding: 7px;
+  border-radius: 2px;
+  background-color: white;
 }
 
 .logo-div {
   display: flex;
-  justify-content: center;
-  width: 200px;
-  height: 200px;
   cursor: pointer;
   user-select: none;
 }
@@ -48,14 +161,6 @@ body {
 
 .logo-active {
   animation: move 0.9s 1 linear;
-}
-
-.logo-particle {
-  position: absolute;
-  background-color: #b2a98f;
-  width: 4px;
-  height: 4px;
-  animation: flame 0.15s infinite step-end;
 }
 
 @keyframes flame {
@@ -90,12 +195,12 @@ body {
 .game-name {
   color: white;
   font-family: "Varela Round", sans-serif;
-  font-size: 5rem;
-  text-shadow: 4px 4px 0px #b2a98f, 20px 14px 10px rgba(0, 0, 0, 0.15),
-    20px 24px 2px rgba(0, 0, 0, 0.1), 20px 24px 30px rgba(0, 0, 0, 0.1);
+
   margin-right: 7%;
   margin-left: 2%;
+  white-space: nowrap;
   user-select: none;
+  z-index: 5;
 }
 
 .centerer {
@@ -107,8 +212,6 @@ body {
   display: flex;
   align-items: center;
   margin-top: 5%;
-  width: 80vw;
-  height: 20vh;
   border: gray 3px solid;
   background-color: white;
 }
@@ -167,6 +270,8 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
   animation: no-hover 1s 1 ease;
+  text-decoration: none;
+  color: black;
 }
 
 .item-style:hover {
@@ -198,7 +303,6 @@ body {
 .fa {
   color: rgba(0, 0, 0, 0.749);
   margin-right: 15px;
-  font-size: 5rem;
 }
 
 #item-list::-webkit-scrollbar {
@@ -217,12 +321,13 @@ body {
 }
 
 .comment {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: gray 3px solid;
-  width: 60vw;
-  height: 90vh;
   margin-top: 5%;
   margin-bottom: 5%;
+  padding-bottom: 10px;
   background-color: white;
   min-height: 300px;
 }
@@ -231,13 +336,12 @@ body {
   margin-top: 3%;
   resize: none;
   height: 10vh;
-  width: 50vw;
   font-size: 20px;
   font-family: "Varela Round", sans-serif;
   border-radius: 4px;
   background-color: #f8f8f8;
   padding: 1%;
-  border: 2px solid gray;
+  border: 3px solid gray;
 }
 
 h2 {
@@ -254,10 +358,10 @@ h2 {
   width: 6em;
   color: rgb(255, 255, 255);
   font-family: "Varela Round", sans-serif;
-  margin-top: 1%;
-  margin-right: 7%;
+  margin-top: 20px;
   font-size: 1rem;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 .comment-button:hover {
@@ -265,16 +369,15 @@ h2 {
 }
 
 .button-end {
+  width: 100%;
   display: flex;
   justify-content: end;
 }
 
 .comment-section {
   border: gray 3px solid;
-  margin-top: 1%;
-  margin-left: 7%;
-  width: 51vw;
-  height: 50%;
+  margin-top: 20px;
+  height: 50vh;
 }
 
 .fake-comment {
@@ -285,6 +388,7 @@ h2 {
 
 .comment-style {
   padding-bottom: 1.5%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .comment-style:hover {
@@ -293,12 +397,10 @@ h2 {
 
 #user1::before {
   content: "Ian: ";
-  font-family: "Varela Round", sans-serif;
 }
 
 #user2::before {
   content: "Benjamin: ";
-  font-family: "Varela Round", sans-serif;
 }
 
 .thumb-button {
