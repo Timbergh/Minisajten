@@ -344,6 +344,10 @@ body {
   border: 3px solid gray;
 }
 
+#comment-area:focus {
+  background-color: white;
+}
+
 h2 {
   text-align: center;
   margin-top: 3%;
@@ -431,4 +435,9 @@ h2 {
 
 #user1 .thumb-button-up::after {
   content: "31";
+}
+
+footer {
+  background-color: rgb(48, 79, 109);
+  height: 200px;
 }
