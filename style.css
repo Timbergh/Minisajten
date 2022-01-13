@@ -438,6 +438,19 @@ h2 {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: rgb(48, 79, 109);
   height: 200px;
+}
+
+.footer-content {
+  color: rgb(177, 177, 177);
+  margin: 10px;
+}
+
+.social {
+  font-size: xx-large;
 }
