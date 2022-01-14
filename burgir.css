@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 * {
   margin: 0;
@@ -29,7 +30,7 @@
 
   .comment {
     width: 60vw;
-    height: 90vh;
+    height: 120vh;
   }
 
   #comment-area {
@@ -68,7 +69,7 @@
 
   .comment {
     width: 80vw;
-    height: 90vh;
+    height: 150vh;
   }
 
   #comment-area {
@@ -133,7 +134,6 @@ body {
   align-items: center;
   width: auto;
   background-color: rgb(48, 79, 109);
-  min-height: 200px;
 }
 
 .sign-in-button {
@@ -142,20 +142,11 @@ body {
   right: 10px;
 }
 
-.sign-in-button a {
-  text-decoration: none;
-}
-
 .login {
   margin-left: 2px;
   padding: 7px;
   border-radius: 2px;
   background-color: white;
-  transition: width 2s;
-}
-
-.login:hover {
-  width: 70px;
 }
 
 .logo-div {
@@ -194,6 +185,7 @@ body {
 .game-name {
   color: white;
   font-family: "Varela Round", sans-serif;
+
   margin-right: 7%;
   margin-left: 2%;
   white-space: nowrap;
@@ -225,7 +217,7 @@ body {
 
 #scroll-left {
   position: sticky;
-  left: 0;
+  left: 0px;
   z-index: 2;
 }
 
@@ -410,20 +402,12 @@ h2 {
   transform: scale(1.2);
 }
 
-#user2 .thumb-button-down::after {
-  content: "12";
-}
-
-#user2 .thumb-button-up::after {
-  content: "0";
-}
-
 #user1 .thumb-button-down::after {
-  content: "1";
+  content: "3";
 }
 
 #user1 .thumb-button-up::after {
-  content: "31";
+  content: "3";
 }
 
 footer {
@@ -442,4 +426,17 @@ footer {
 
 .social {
   font-size: xx-large;
+}
+
+#burgir {
+  margin: 50px;
+  width: 50vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.burgir-img {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: rgba(0, 0, 0, 0.749) 3px dotted;
+  border-top: rgba(0, 0, 0, 0.749) 3px dotted;
 }
