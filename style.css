@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
 
 * {
   margin: 0;
@@ -151,11 +152,13 @@ body {
   padding: 7px;
   border-radius: 2px;
   background-color: white;
-  transition: width 2s;
+  transition: width height 2s;
+  cursor: pointer;
 }
 
-.login:hover {
+.login:active {
   width: 70px;
+  height: 35px;
 }
 
 .logo-div {
@@ -166,7 +169,6 @@ body {
 
 #logo {
   position: absolute;
-  display: flex;
 }
 
 .logo-active {
@@ -382,6 +384,7 @@ h2 {
 .comment-style {
   padding-bottom: 1.5%;
   font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
 }
 
 .comment-style:hover {
@@ -390,10 +393,14 @@ h2 {
 
 #user1::before {
   content: "Ian: ";
+  font-family: "Oswald", sans-serif;
+  border-bottom: 2px black solid;
 }
 
 #user2::before {
   content: "Benjamin: ";
+  font-family: "Oswald", sans-serif;
+  border-bottom: 2px black solid;
 }
 
 .thumb-button {
